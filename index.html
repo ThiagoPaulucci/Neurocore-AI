@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neurocore AI</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <div class="brand">NEUROCORE AI</div>
+
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Alternar tema">
+        ☀️
+      </button>
+
+      <nav class="menu">
+        <a href="#" class="menu-link active">Conversar</a>
+        <a href="#" class="menu-link">Modelos</a>
+
+        <button class="profile" aria-label="Perfil">
+          <span class="profile-head"></span>
+          <span class="profile-body"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <div class="badge">✦ SISTEMA ONLINE</div>
+
+      <h1>Como posso ajudar você hoje?</h1>
+
+      <p class="subtitle">
+        Inicie uma conversa digitando sua dúvida ou comando abaixo.<br />
+        Estou pronto para processar qualquer solicitação.
+      </p>
+
+      <form class="search-box" id="chatForm">
+        <div class="search-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="2"></circle>
+            <path d="M16 16L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+          </svg>
+        </div>
+
+        <input
+          type="text"
+          id="promptInput"
+          placeholder="pergunte algo"
+          autocomplete="off"
+        />
+
+        <button type="submit" class="send-btn" aria-label="Enviar">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M5 12H18" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/>
+            <path d="M13.5 7L19 12L13.5 17" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </form>
+
+      <div class="warning">
+        NEUROCORE AI PODE APRESENTAR INFORMAÇÕES IMPRECISAS. VERIFIQUE FATOS IMPORTANTES.
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
